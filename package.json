@@ -1,0 +1,23 @@
+{
+  "name": "dontknowjs",
+  "version": "1.0.0",
+  "description": "notes for getify/You-Dont-Know-JS course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelmusicman/You-Dont-Know-JS.git"
+  },
+  "keywords": [
+    "learning",
+    "notes"
+  ],
+  "author": "Joel Venable",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelmusicman/You-Dont-Know-JS/issues"
+  },
+  "homepage": "https://github.com/joelmusicman/You-Dont-Know-JS#readme"
+}
