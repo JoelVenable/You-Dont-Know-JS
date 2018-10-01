@@ -109,12 +109,13 @@ var c = foo(2);
 // Nested Scope 
 
 function kbb(a) {
-  console.log(a + b);  // b cannot be found inside 'kbb' so scope looks in global.
+  console.log(a + b); // b cannot be found inside 'kbb' so scope looks in global.
 }
 
 var b = 2;
 
-kbb(2);  // 4
+kbb(2); // 4
 
 //  rules for traversing nested scope:  Engine first looks in the currently executing scope, if it cannot find the variable it goes 'up' a level, and continues up to the global scope.  Once in global, the search stops whether or not the variable is found.
+
 
