@@ -23,7 +23,7 @@ switch (a) {
   case 20:
     // function here
     break;
-  default: 
+  default:
     //fallback
 }
 
@@ -46,4 +46,52 @@ switch (a) {
 
 
 
-//  Conditional operator 
+//  Conditional operator (terniary operator)
+//  Concise form of if...else
+
+var a = 42;
+
+var b = (a > 41) ? "hello" : "world";
+
+/*  similar to:
+if (a > 41) {
+  b = "hello";
+} else {
+  b = "world";
+}
+
+conditional operator does not have to be used for assignment, but it is most common usage of this format.
+
+*/
+
+
+// Strict Mode
+
+// Strict mode tightens rules for certain behaviors.  Keeps code to safer set of guidelines.  Also, strict mode makes you rcode more optimizable by the engines.
+
+// Strict mode can be opted in for individual function or entire file depending on the declaration.
+
+function foo() {
+  "use strict";
+
+  // this code is strict mode
+
+  function bar() {
+    // this code is also strict mode.
+  }
+}
+
+// this code is not strict mode
+
+
+// Key difference - auto-global variable declarations are disabled.
+
+function foo() {
+  kaz = 1; // 'var' missing, ReferenceError.
+}
+
+//foo();
+
+//  Turning on strict mode may induce errors, temptation is to turn off.  Errors on strict mode are indicative of bad coding practices.
+
+// Strict mode represents future direction of language.
