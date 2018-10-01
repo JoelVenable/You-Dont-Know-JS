@@ -12,4 +12,4 @@ var e1 = document.getElementById("foo");
 
 // Another example:  alert() popups - provided by the browser, not the JS engine itself.
 
-// Console.log is alos a browser tool.  
+// Console.log is also a browser tool.
