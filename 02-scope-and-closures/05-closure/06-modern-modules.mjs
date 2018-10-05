@@ -1,4 +1,4 @@
-// Module dependency loaders essentially wrap module definition in a 'friendly' API.  Proof of concept:
+/* Module dependency loaders essentially wrap module definition in a 'friendly' API.  Proof of concept:  
 
 var MyModules = (function Manager() {
   var modules = {};
@@ -66,13 +66,19 @@ foo.awesome(); // LET ME INTRODUCE: HIPPO
 
 //  Thus:
 
-// import 'foo' and 'bar' modules:
+// import 'foo' and 'bar' modules:  
+ES5 way (with babel):
 
-module bar from "bar";
-module foo from "foo";
+const bar = require('./bar');
+const foo = require('./foo');
+
+
+ES6 way (unsupported by node.js):
+module bar from 'bar';
+module foo from 'foo';
 
 console.log(
   bar.hello('rhino')
 ); // Let me introduce: rhino
 
-foo.awesome(); // LET ME INTRODUCE: RHINO
+foo.awesome(); // LET ME INTRODUCE: RHINO   */
